@@ -10,7 +10,6 @@ public class client{
         File file = new File("./59160977.jpg");
         FileInputStream imageInFile = new FileInputStream(file);
         byte[] imageData = new byte[(int) file.length()];
-        System.out.println("imageData" + imageData);
         imageInFile.read(imageData);
         String base64Image = Base64.getEncoder().encodeToString(imageData);
         System.out.println("Encode file name is : " + file + " Success! ");
